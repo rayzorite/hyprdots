@@ -1,0 +1,97 @@
+@keyframes fadeIn {
+    0% {
+    }
+    100% {
+    }
+}
+
+* {
+    all:unset;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    text-shadow:none;
+    background-color: transparent;
+}
+
+window {
+    all:unset;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+#inner-box {
+    margin: 2px;
+    padding: 5px;
+    border: none;
+}
+#outer-box {    
+    border: none;
+}
+#scroll {
+    margin: 0px;
+    padding: 30px;
+    border: none;
+}
+#input {
+    all:unset;
+    margin-left:20px;
+    margin-right:20px;
+    margin-top:20px;
+    padding: 20px;
+    border: none;
+    outline: none;
+    color: rgb(44, 204, 183);
+    border-radius:10;
+    background-color: rgba(44, 204, 183, 0.05);
+}
+#input image {
+    border: none;
+    color: teal;
+    padding-right:10px;
+}
+#input * {
+    border: none;
+    outline: none;
+}
+
+#input:focus {
+    outline: none;
+    border: none;
+
+    border-radius:10;
+}
+#text {
+    margin: 5px;
+    border: none;
+    color: rgb(44, 204, 183);
+    outline: none;
+}
+#text {
+    margin: 5px;
+    border: none;
+    color: rgb(197, 197, 197);
+    outline: none;
+}
+#entry {
+    border: none;
+    margin: 5px;
+    padding: 10px;
+}
+#entry arrow {
+    border: none;
+    color: teal;
+
+}
+#entry:selected {
+    border: none;
+    border-radius: 12px;
+    background-color: teal;
+}
+#entry:selected #text {
+    color: rgb(255, 255, 255);
+}
+#entry:drop(active) {
+    background-color: black;
+}
