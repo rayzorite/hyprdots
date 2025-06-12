@@ -1,0 +1,84 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "source": "$(find \"${XDG_CONFIG_HOME:-$HOME/.config}/fastfetch/images/\" -name \"*.png\" | shuf -n 1)",
+        "height": 12,
+        "padding": {
+            "top": 1
+        }
+    },
+    "display": {
+      "separator": " : "
+    },
+    "modules": [
+        {
+          "type": "title",
+          "key": "  ",
+          "format": "{6} {7} {8}"
+        },
+      {
+        "type": "custom",
+        "format": "┌──────────────────────────────────────────┐"
+      },
+      {
+        "type": "os",
+        "key": "  󰣇 OS",
+        "format": "{2}",
+        "keyColor": "red"
+      },
+      {
+        "type": "wm",
+        "key": "  󱗃 WM",
+        "format": "{2}",
+        "keyColor": "yellow"
+      },
+      {
+        "type": "kernel",
+        "key": "   Kernel",
+        "format": "{2}",
+        "keyColor": "red"
+      },
+      {
+        "type": "packages",
+        "key": "  󰏗 Packages",
+        "keyColor": "green"
+      },
+      {
+        "type": "terminal",
+        "key": "   Terminal",
+        "keyColor": "yellow"
+      },
+      {
+        "type": "cpu",
+        "format": "{1} @ {7}",
+        "key": "   CPU",
+        "keyColor": "blue"
+      },
+      {
+        "type": "gpu",
+        "format": "{1} {2}",
+        "key": "  󰊴 GPU",
+        "keyColor": "blue"
+      },
+      {
+        "type": "memory",
+        "key": "   Memory ",
+        "keyColor": "magenta"
+      },
+      {
+        "type": "uptime",
+        "key": "  󱫐 Uptime ",
+        "keyColor": "red"
+      },
+      {
+        "type": "custom",
+        "format": "└──────────────────────────────────────────┘"
+      },
+      {
+        "type": "colors",
+        "paddingLeft": 2,
+        "symbol": "circle"
+      },
+      "break"
+    ]
+  }
